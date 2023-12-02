@@ -15,12 +15,15 @@ This Python script allows you to download photos and videos from your Google Pho
      pip install -r requirements.txt
      ```
 
+3. **Google.py Module:**
+   - Ensure that the `Google.py` module is present in the same directory as the script. This module is used for establishing a connection with the Google Photos API.
+
 ## How to Run the Script
 
 1. **Execute the Script:**
    - Run the script by executing the following command in your terminal or command prompt:
      ```bash
-     python script.py
+     python google-photos-backup.py 
      ```
 
 2. **Authenticate and Authorize:**
@@ -34,7 +37,7 @@ This Python script allows you to download photos and videos from your Google Pho
 
 ## Notes and Tips
 
-- The script is configured to download a maximum of 10 media items for debugging purposes. You can adjust the `max_items` variable in the script to download more items.
+- The script is configured to download a maximum of 100 media items per page. You can adjust the `pageSize` parameter in the script to control the number of items per page.
 
 - Ensure that your Google account has the necessary permissions to access the Google Photos API.
 
@@ -43,5 +46,3 @@ This Python script allows you to download photos and videos from your Google Pho
 ## Disclaimer
 
 This script is provided as-is and without warranty. Use it responsibly and ensure compliance with Google's API usage policies.
-
-Feel free to customize this `readme.md` based on your specific use case or any additional instructions you'd like to provide.
